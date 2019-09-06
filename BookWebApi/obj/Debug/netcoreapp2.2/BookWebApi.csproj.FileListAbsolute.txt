@@ -1,0 +1,14 @@
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\bin\Debug\netcoreapp2.2\BookWebApi.deps.json
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\bin\Debug\netcoreapp2.2\BookWebApi.runtimeconfig.json
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\bin\Debug\netcoreapp2.2\BookWebApi.runtimeconfig.dev.json
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\bin\Debug\netcoreapp2.2\BookWebApi.dll
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.csprojAssemblyReference.cache
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.csproj.CoreCompileInputs.cache
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.RazorAssemblyInfo.cache
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.RazorAssemblyInfo.cs
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.AssemblyInfoInputs.cache
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.AssemblyInfo.cs
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\bin\Debug\netcoreapp2.2\BookWebApi.pdb
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.dll
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.pdb

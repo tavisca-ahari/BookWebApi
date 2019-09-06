@@ -1,0 +1,17 @@
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\BookWebApiTest.deps.json
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\BookWebApiTest.runtimeconfig.json
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\BookWebApiTest.runtimeconfig.dev.json
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\BookWebApiTest.dll
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\BookWebApiTest.pdb
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\BookWebApi.dll
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\bin\Debug\netcoreapp2.2\BookWebApi.pdb
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\obj\Debug\netcoreapp2.2\BookWebApiTest.csprojAssemblyReference.cache
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\obj\Debug\netcoreapp2.2\BookWebApiTest.csproj.CoreCompileInputs.cache
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\obj\Debug\netcoreapp2.2\BookWebApiTest.AssemblyInfoInputs.cache
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\obj\Debug\netcoreapp2.2\BookWebApiTest.AssemblyInfo.cs
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\obj\Debug\netcoreapp2.2\BookWebApiTest.csproj.CopyComplete
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\obj\Debug\netcoreapp2.2\BookWebApiTest.dll
+C:\Users\ahari\source\repos\BookWebApi\BookWebApiTest\obj\Debug\netcoreapp2.2\BookWebApiTest.pdb
