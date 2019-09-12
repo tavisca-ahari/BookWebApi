@@ -11,9 +11,9 @@ namespace BookWebApi.DAO
     {
         public static List<Book> bookList = new List<Book>()
         {
-            new Book{id=1,name="ABC",category="thriller",price=10,author="ABC"},
-            new Book{id=2,name="VBNM",category="comedy",price=20,author="HJK"},
-            new Book{id=3,name="PLM",category="tragedy",price=30,author="ERT"},
+            new Book{Id=1,Name="ABC",Category="thriller",Price=10,Author="ABC"},
+            new Book{Id=2,Name="VBNM",Category="comedy",Price=20,Author="HJK"},
+            new Book{Id=3,Name="PLM",Category="tragedy",Price=30,Author="ERT"},
         };
 
         public List<Book> Get()
@@ -25,7 +25,7 @@ namespace BookWebApi.DAO
         {
             foreach (Book book in bookList)
             {
-                if (book.id == id)
+                if (book.Id == id)
                     return book;
             }
             return null;
@@ -41,7 +41,7 @@ namespace BookWebApi.DAO
         {
             for (int i = 0; i < bookList.Count; i++)
             {
-                if (bookList[i].id == id)
+                if (bookList[i].Id == id)
                 {
                     bookList[i] = book;
                     return book;
@@ -54,7 +54,7 @@ namespace BookWebApi.DAO
         {
             for (int i = 0; i < bookList.Count; i++)
             {
-                if (bookList[i].id == id)
+                if (bookList[i].Id == id)
                 {
                     Book book = bookList[i];
                     bookList.RemoveAt(i);

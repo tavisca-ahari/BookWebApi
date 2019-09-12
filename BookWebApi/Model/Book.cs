@@ -7,11 +7,11 @@ namespace BookWebApi.Model
 {
     public class Book
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string category { get; set; }
-        public int price { get; set; }
-        public string author { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Category { get; set; }
+        public float Price { get; set; }
+        public string Author { get; set; }
     }
 }
 

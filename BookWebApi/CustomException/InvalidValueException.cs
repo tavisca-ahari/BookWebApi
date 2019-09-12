@@ -7,9 +7,13 @@ namespace BookWebApi.CustomException
 {
     public class InvalidValueException : Exception
     {
-        public InvalidValueException(string Message) : base(Message)
-        {
+        public string ErrorCode { get; }
+        public List<string> ErrorList { get; }
 
+        public InvalidValueException(string ErrorCode, List<string> ErrorList)
+        {
+            this.ErrorCode = ErrorCode;
+            this.ErrorList = ErrorList;
         }
     }
 }

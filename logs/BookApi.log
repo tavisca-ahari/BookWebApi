@@ -1,0 +1,8 @@
+2019-09-12 23:11:53,069 [12] ERROR BookWebApi.Controllers.BookController - Invalid Id - -1
+BookWebApi.CustomException.InvalidValueException: Exception of type 'BookWebApi.CustomException.InvalidValueException' was thrown.
+   at BookWebApi.Service.BookService.GetBook(Int32 id) in C:\Users\ahari\source\repos\BookWebApi\BookWebApi\Service\BookService.cs:line 48
+   at BookWebApi.Controllers.BookController.Get(Int32 id) in C:\Users\ahari\source\repos\BookWebApi\BookWebApi\Controllers\BookController.cs:line 35
+2019-09-12 23:12:44,445 [9] ERROR BookWebApi.Controllers.BookController - Get Book exception for id 8
+BookWebApi.CustomException.InvalidValueException: Exception of type 'BookWebApi.CustomException.InvalidValueException' was thrown.
+   at BookWebApi.Service.BookService.GetBook(Int32 id) in C:\Users\ahari\source\repos\BookWebApi\BookWebApi\Service\BookService.cs:line 38
+   at BookWebApi.Controllers.BookController.Get(Int32 id) in C:\Users\ahari\source\repos\BookWebApi\BookWebApi\Controllers\BookController.cs:line 35

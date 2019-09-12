@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using BookWebApi.Service;
 using BookWebApi.Model;
 using BookWebApi.CustomException;
+using BookWebApi.Constants;
 
 namespace BookWebApi.Controllers
 {
@@ -14,13 +15,14 @@ namespace BookWebApi.Controllers
     [ApiController]
     public class BookController : ControllerBase
     {
-
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(typeof(BookController));
         private BookService bookService = new BookService();
 
         // GET: api/Book
         [HttpGet]
         public IActionResult Get()
         {
+            log.Debug("Inside Get All Books endpoint.");
             return Ok(bookService.GetBook());
         }
 
@@ -32,9 +34,18 @@ namespace BookWebApi.Controllers
             {
                 return Ok(bookService.GetBook(id));
             }
-            catch (IncorrectIdException Ex)
+            catch (InvalidValueException Ex)
             {
-                return BadRequest(new Error { errorMessage = Ex.Message });
+                if (Ex.ErrorCode.Equals(ErrorConstants.BookNotPresentErrorCode))
+                {
+                    log.Error("Get Book exception for id " + id, Ex);
+                    return NotFound(new Error { ErrorCode = Ex.ErrorCode, ErrorMessage = Ex.ErrorList });
+                }
+                else
+                {
+                    log.Error("Invalid Id - "+id, Ex);
+                    return BadRequest(new Error { ErrorCode = Ex.ErrorCode, ErrorMessage = Ex.ErrorList });
+                }
             }
         }
 
@@ -46,13 +57,9 @@ namespace BookWebApi.Controllers
             {
                 return Ok(bookService.CreateBook(book));
             }
-            catch (IncorrectIdException Ex)
-            {
-                return BadRequest(new Error { errorMessage = Ex.Message });
-            }
             catch (InvalidValueException Ex)
             {
-                return BadRequest(new Error { errorMessage = Ex.Message });
+                return BadRequest(new Error { ErrorCode = Ex.ErrorCode, ErrorMessage = Ex.ErrorList });
             }
         }
 
@@ -64,9 +71,16 @@ namespace BookWebApi.Controllers
             {
                 return Ok(bookService.UpdateBook(id, book));
             }
-            catch (IncorrectIdException Ex)
+            catch (InvalidValueException Ex)
             {
-                return NotFound(new Error { errorMessage = Ex.Message });
+                if (Ex.ErrorCode.Equals(ErrorConstants.BookNotPresentErrorCode))
+                {
+                    return NotFound(new Error { ErrorCode = Ex.ErrorCode, ErrorMessage = Ex.ErrorList });
+                }
+                else
+                {
+                    return BadRequest(new Error { ErrorCode = Ex.ErrorCode, ErrorMessage = Ex.ErrorList });
+                }
             }
         }
 
@@ -78,9 +92,16 @@ namespace BookWebApi.Controllers
             {
                 return Ok(bookService.DeleteBook(id));
             }
-            catch (IncorrectIdException Ex)
+            catch (InvalidValueException Ex)
             {
-                return NotFound(new Error { errorMessage = Ex.Message });
+                if (Ex.ErrorCode.Equals(ErrorConstants.BookNotPresentErrorCode))
+                {
+                    return NotFound(new Error { ErrorCode = Ex.ErrorCode, ErrorMessage = Ex.ErrorList });
+                }
+                else
+                {
+                    return BadRequest(new Error { ErrorCode = Ex.ErrorCode, ErrorMessage = Ex.ErrorList });
+                }
             }
         }
     }

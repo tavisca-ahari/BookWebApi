@@ -12,3 +12,4 @@ C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWe
 C:\Users\ahari\source\repos\BookWebApi\BookWebApi\bin\Debug\netcoreapp2.2\BookWebApi.pdb
 C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.dll
 C:\Users\ahari\source\repos\BookWebApi\BookWebApi\obj\Debug\netcoreapp2.2\BookWebApi.pdb
+C:\Users\ahari\source\repos\BookWebApi\BookWebApi\bin\Debug\netcoreapp2.2\log4net.config

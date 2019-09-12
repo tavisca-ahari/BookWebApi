@@ -7,6 +7,7 @@ namespace BookWebApi.Model
 {
     public class Error
     {
-        public string errorMessage { get; set; }
+        public string ErrorCode { get; set; }
+        public List<string> ErrorMessage { get; set; }
     }
 }
